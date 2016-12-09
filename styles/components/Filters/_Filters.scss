@@ -1,4 +1,4 @@
-.App{
+.SizeFilter{
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -10,27 +10,27 @@
   -webkit-align-content: flex-start;
   -ms-flex-line-pack: start;
   align-content: flex-start;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  .flex-filters-container{
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    -webkit-flex: 2 0 auto;
-    -ms-flex: 2 0 auto;
-    flex: 2 0 auto;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
-  }
-  .flex-products-container{
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  .flex-container-sizeFilter{
     -webkit-order: 0;
     -ms-flex-order: 0;
     order: 0;
     -webkit-flex: 8 0 auto;
     -ms-flex: 8 0 auto;
     flex: 8 0 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+  }
+  .flex-container-amount{
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 2 0 auto;
+    -ms-flex: 2 0 auto;
+    flex: 2 0 auto;
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;

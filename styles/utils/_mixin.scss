@@ -1,0 +1,10 @@
+@mixin flex-direction($row){
+  -webkit-flex-direction: $row;
+  -ms-flex-direction: $row;
+  flex-direction: $row;
+}
+@mixin flex-wrap($warp){
+  -webkit-flex-wrap: $warp;
+  -ms-flex-wrap: $warp;
+  flex-wrap: $warp;
+}
