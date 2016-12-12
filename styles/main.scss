@@ -1,8 +1,12 @@
 @import "./utils/_normalize";
+@import './utils/_mixin';
 
 @import "./_settings";
 
+@import './core/_fonts';
 @import "./core/_layout";
 
 @import './components/_App';
 @import './components/Filters/_Filters';
+@import './components/Filters/_OptionFilter';
+@import './components/Filters/_CustomRating'

@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Filter from './Filter'
+import OptionFilter from './OptionFilter';
+import CustomRating from './CustomRating';
 
 export default class Filters extends React.Component{
   constructor(props){
@@ -8,11 +9,11 @@ export default class Filters extends React.Component{
   }
 
   render(){
-    const labels = ['size', 'favourite', 'industry'];
     return(
-      <div>
-        <h1>Filters: </h1>
-        {labels.map((el) => <Filter label={el}/>)}
+      <div className='Filters'>
+        <span>Narrow results: </span>
+        <OptionFilter />
+        <CustomRating />
       </div>
     );
   }

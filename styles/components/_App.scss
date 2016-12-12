@@ -1,38 +1,22 @@
 .App{
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  @include display-flex();
   @include flex-direction(row);
   @include flex-wrap(nowrap);
-  -webkit-justify-content: center;
+  @include justify-content(center);
   -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-content: flex-start;
+  @include align-content(flex-start);
   -ms-flex-line-pack: start;
-  align-content: flex-start;
-  -webkit-align-items: stretch;
+  @include align-items(stretch);
   -ms-flex-align: stretch;
-  align-items: stretch;
   .flex-filters-container{
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    -webkit-flex: 2 0 auto;
-    -ms-flex: 2 0 auto;
-    flex: 2 0 auto;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
+    max-width: 300px;
+    padding-left: 10px;
+    border-right: 1px solid #ebebeb;
+    @include flex(1, 0, auto);
+    @include align-self(auto);
   }
   .flex-products-container{
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    -webkit-flex: 8 0 auto;
-    -ms-flex: 8 0 auto;
-    flex: 8 0 auto;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
+    @include flex(9, 0, auto);
+    @include align-self(auto);
   }
 }
