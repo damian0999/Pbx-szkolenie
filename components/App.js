@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Filters from './Filters/Filters'
-import Counter from '../containers/Counter'
+import Filters from './Filters/Filters';
+import Products from './Products/Products';
 
 export default class App extends React.Component{
   constructor(props){
@@ -14,7 +14,7 @@ export default class App extends React.Component{
           <Filters />
         </div>
         <div className='Products flex-products-container'>
-          <Counter />
+          <Products />
         </div>
       </div>
     );

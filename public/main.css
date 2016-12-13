@@ -412,6 +412,7 @@ body {
   background-color: #fff; }
 
 .App {
+  margin-top: 20px;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -424,9 +425,9 @@ body {
   -webkit-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
-  align-content: flex-start;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
+  align-content: space-between;
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: justify;
   -webkit-align-items: stretch;
   align-items: stretch;
   -ms-flex-align: stretch; }
@@ -552,5 +553,59 @@ body {
       .CustomRating .flex-container-amount .filter-amount span {
         font-size: 14px;
         color: #383838; }
+
+.Products {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  align-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -ms-flex-align: start;
+  width: 82%; }
+
+.Product {
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid white; }
+  .Product .product-image {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+  .Product .product-rating {
+    margin-top: 20px; }
+    .Product .product-rating .favourite-image {
+      float: right; }
+  .Product .product-description .product-name {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #686666; }
+  .Product .product-description span {
+    color: #686666;
+    font-size: 14px; }
+
+.Product:hover {
+  border: 2px solid #56c47a; }
+  .Product:hover .product-image {
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1); }
+  .Product:hover .product-description .product-name {
+    color: #56c47a; }
 
 /*# sourceMappingURL=main.css.map */
