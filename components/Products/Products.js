@@ -1,5 +1,6 @@
 import React from 'react';
 import Product from './Product';
+import Header from '../Header/Header'
 
 export default class Products extends React.Component{
   constructor(props){
@@ -32,8 +33,11 @@ export default class Products extends React.Component{
 
   render(){
     return(
-      <div className='Products'>
-        {this.state.products.map((el, idx) => this.showProducts(el, idx))}
+      <div>
+        <Header />
+        <div className='Products'>
+          {this.state.products.map((el, idx) => this.showProducts(el, idx))}
+        </div>
       </div>
     );
   }

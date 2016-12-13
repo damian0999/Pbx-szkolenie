@@ -1,0 +1,46 @@
+.ViewFilters{
+  @include flex(3, 0, auto);
+  @include align-self(flex-start);
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    .dropbtn {
+      background-color: white;
+      color: #383838;
+      padding: 10px 16px 10px 16px;
+      font-size: 14px;
+      border: 1px solid #f3f3f3;
+      cursor: pointer;
+      span{
+        color: #9b9b9b;
+      }
+    }
+    .dropbtn:focus{
+      outline: none;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      width: inherit;
+      border: 1px solid #f3f3f3;
+      a{
+        color: #383838;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      a:hover{
+        background-color: #56c47a;
+        color: white;
+      }
+    }
+    .show {display:block;}
+  }
+  .columns-filter{
+    display: inline-block;
+    img{
+      margin-right: 10px;
+    }
+  }
+}

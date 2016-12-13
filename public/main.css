@@ -608,4 +608,95 @@ body {
   .Product:hover .product-description .product-name {
     color: #56c47a; }
 
+.Header {
+  margin-left: 25px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: start;
+  align-content: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -ms-flex-align: start; }
+
+.FilterResults {
+  -webkit-flex: 7 0 auto;
+  -ms-flex: 7 0 auto;
+  flex: 7 0 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto; }
+  .FilterResults .search-results p {
+    display: inline-block;
+    padding-right: 10px;
+    color: #383838;
+    font-size: 14px; }
+  .FilterResults .search-results span {
+    color: #9b9b9b;
+    font-size: 14px; }
+  .FilterResults .selected-filters p {
+    display: inline-block;
+    margin-top: 0px;
+    color: #383838;
+    font-size: 14px; }
+  .FilterResults .selected-filters span {
+    border: 1px solid #ebebeb;
+    color: #9b9b9b;
+    padding: 5px 8px 5px 8px;
+    margin-left: 5px; }
+    .FilterResults .selected-filters span i {
+      padding-left: 5px; }
+
+.ViewFilters {
+  -webkit-flex: 3 0 auto;
+  -ms-flex: 3 0 auto;
+  flex: 3 0 auto;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start; }
+  .ViewFilters .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px; }
+    .ViewFilters .dropdown .dropbtn {
+      background-color: white;
+      color: #383838;
+      padding: 10px 16px 10px 16px;
+      font-size: 14px;
+      border: 1px solid #f3f3f3;
+      cursor: pointer; }
+      .ViewFilters .dropdown .dropbtn span {
+        color: #9b9b9b; }
+    .ViewFilters .dropdown .dropbtn:focus {
+      outline: none; }
+    .ViewFilters .dropdown .dropdown-content {
+      display: none;
+      position: absolute;
+      width: inherit;
+      border: 1px solid #f3f3f3; }
+      .ViewFilters .dropdown .dropdown-content a {
+        color: #383838;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block; }
+      .ViewFilters .dropdown .dropdown-content a:hover {
+        background-color: #56c47a;
+        color: white; }
+    .ViewFilters .dropdown .show {
+      display: block; }
+  .ViewFilters .columns-filter {
+    display: inline-block; }
+    .ViewFilters .columns-filter img {
+      margin-right: 10px; }
+
 /*# sourceMappingURL=main.css.map */
