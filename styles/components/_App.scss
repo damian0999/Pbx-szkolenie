@@ -1,11 +1,12 @@
 .App{
+  margin-top: 20px;
   @include display-flex();
   @include flex-direction(row);
   @include flex-wrap(nowrap);
   @include justify-content(center);
   -ms-flex-pack: center;
-  @include align-content(flex-start);
-  -ms-flex-line-pack: start;
+  @include align-content(space-between);
+  -ms-flex-line-pack: justify;
   @include align-items(stretch);
   -ms-flex-align: stretch;
   .flex-filters-container{

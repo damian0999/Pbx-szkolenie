@@ -1,0 +1,40 @@
+.Product{
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid white;
+  .product-image{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .product-rating{
+    margin-top: 20px;
+    .favourite-image{
+      float: right;
+    }
+  }
+  .product-description{
+    .product-name{
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-size: 18px;
+      font-weight: 300;
+      color: #686666;
+    }
+    span{
+      color:#686666;
+      font-size: 14px;
+    }
+  }
+}
+.Product:hover{
+  border: 2px solid #56c47a;
+  .product-image{
+    @include scale(1.1, 1.1);
+  }
+  .product-description{
+    .product-name{
+      color: #56c47a;
+    }
+  }
+}
