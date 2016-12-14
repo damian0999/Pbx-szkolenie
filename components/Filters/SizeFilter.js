@@ -1,5 +1,6 @@
 import React from 'react';
-import Checkbox from '../general/Checkbox'
+import Checkbox from '../general/Checkbox';
+import ClearFilters from '../general/ClearFilters';
 
 export default class OptionFilter extends React.Component{
   constructor(props){
@@ -21,6 +22,7 @@ export default class OptionFilter extends React.Component{
   render(){
     return(
       <div className='SizeFilter Filter'>
+        <ClearFilters />
         <p className='filter-name'>Size</p>
         {this.state.sizes.map((el, idx) => this.showCheckbox(el, idx))}
       </div>

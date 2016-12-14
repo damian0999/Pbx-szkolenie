@@ -1,5 +1,6 @@
 import React from "react";
 import Checkbox from "../general/Checkbox";
+import ClearFilters from '../general/ClearFilters';
 
 export default class Favorite extends React.Component {
   constructor(props) {
@@ -24,6 +25,7 @@ export default class Favorite extends React.Component {
   render() {
     return (
       <div className='Favourite Filter'>
+        <ClearFilters />
         <p className='filter-name'>Favorite</p>
         {this.showFavourite()}
       </div>

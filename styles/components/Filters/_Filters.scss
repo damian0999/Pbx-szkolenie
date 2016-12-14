@@ -1,5 +1,6 @@
 .Filters{
-  span{
+  margin-left: 15px;
+  h3{
     font-size: 18px;
     color: #010101;
   }
@@ -8,6 +9,14 @@
     color: #9b9b9b;
     width: 100%;
     display: block;
+    margin-top: 0px;
     margin-bottom: 9px;
+  }
+  .clear-filter{
+    float: right;
+    margin-right: 20px;
+  }
+  .clear-filter:hover{
+    cursor: pointer;
   }
 }

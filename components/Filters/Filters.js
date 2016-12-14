@@ -14,7 +14,7 @@ export default class Filters extends React.Component{
   render(){
     return(
       <div className='Filters'>
-        <span>Narrow results: </span>
+        <h3>Narrow results: </h3>
         <Orientation />
         <SizeFilter />
         <CustomRating />

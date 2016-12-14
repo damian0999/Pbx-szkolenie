@@ -498,15 +498,23 @@ body {
         font-size: 14px;
         color: #383838; }
 
-.Filters span {
-  font-size: 18px;
-  color: #010101; }
-.Filters .filter-name {
-  font-size: 18px;
-  color: #9b9b9b;
-  width: 100%;
-  display: block;
-  margin-bottom: 9px; }
+.Filters {
+  margin-left: 15px; }
+  .Filters h3 {
+    font-size: 18px;
+    color: #010101; }
+  .Filters .filter-name {
+    font-size: 18px;
+    color: #9b9b9b;
+    width: 100%;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 9px; }
+  .Filters .clear-filter {
+    float: right;
+    margin-right: 20px; }
+  .Filters .clear-filter:hover {
+    cursor: pointer; }
 
 .OrientationFilter {
   display: -ms-flexbox;
@@ -534,10 +542,13 @@ body {
     -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
     text-align: center; }
+    .OrientationFilter .horizontal-filter p {
+      margin-top: 18px;
+      padding-right: 10px; }
     .OrientationFilter .horizontal-filter svg {
       display: block;
       margin-left: auto;
@@ -546,10 +557,13 @@ body {
     -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
     text-align: center; }
+    .OrientationFilter .vertical-filter p {
+      margin-top: 0px;
+      padding-right: 10px; }
     .OrientationFilter .vertical-filter svg {
       display: block;
       margin-left: auto;

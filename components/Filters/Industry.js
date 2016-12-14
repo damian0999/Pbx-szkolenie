@@ -1,5 +1,6 @@
 import React from "react";
 import Checkbox from "../general/Checkbox";
+import ClearFilters from '../general/ClearFilters';
 
 export default class Industry extends React.Component {
 
@@ -13,13 +14,12 @@ export default class Industry extends React.Component {
         {label: "Law", amount: "230", isChecked: false},
         {label: "IT", amount: "18", isChecked: false},
         {label: "Sport", amount: "66", isChecked: false},
-        {label: "Art", amount: "20", isChecked: false},
-        {label: "+ Show more ...", amount: "311", isChecked: false}
+        {label: "Art", amount: "20", isChecked: false}
       ]
     };
   }
 
-  _showIndustry() {
+  showIndustry() {
     return (
       this.state.industries.map((el, idx) => {
         return (
@@ -35,11 +35,11 @@ export default class Industry extends React.Component {
   }
 
   render () {
-    const industries = this._showIndustry();
     return (
       <div className='Industry Filter'>
+        <ClearFilters />
         <p className='filter-name'>Industry</p>
-        {industries}
+        {this.showIndustry()}
       </div>
     )
   }

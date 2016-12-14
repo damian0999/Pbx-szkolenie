@@ -14,8 +14,12 @@
   }
   .horizontal-filter{
     @include flex(1, 0, auto);
-    @include align-self(auto);
+    @include align-self(center);
     text-align: center;
+    p{
+      margin-top: 18px;
+      padding-right: 10px;
+    }
     svg{
       display: block;
       margin-left: auto;
@@ -24,8 +28,12 @@
   }
   .vertical-filter{
     @include flex(1, 0, auto);
-    @include align-self(auto);
+    @include align-self(center);
     text-align: center;
+    p{
+      margin-top: 0px;
+      padding-right: 10px
+    }
     svg{
       display: block;
       margin-left: auto;

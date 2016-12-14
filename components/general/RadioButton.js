@@ -4,21 +4,21 @@ export default class Checkbox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      checked: this.props.isChecked
+      checked: false
     };
   }
 
-  setCheckbox(){
+  setRadio(){
     this.setState({
       checked: !this.state.checked
     });
   }
 
-  selectCheckbox() {
+  selectRadio(){
     if(this.state.checked){
-      return '../../public/images/checkbox-checked.png'
+      return '../../public/images/radio-checked.png'
     } else {
-      return '../../public/images/checkbox-unchecked.png'
+      return '../../public/images/radio-unchecked.png'
     }
   }
 
@@ -27,13 +27,15 @@ export default class Checkbox extends React.Component {
       <div className='Checkbox'>
         <div className='flex-container-option'>
           <div className='filter-option'>
-              <img src={this.selectCheckbox()} name='checkbox' className='checkbox' onClick={() => this.setCheckbox()}/>
-              <label htmlFor="checkbox" className="filter-label">{this.props.label}</label>
+              <img src={this.selectRadio()} name='radio' className='checkbox' onClick={() => this.setRadio()}/>
+              <label htmlFor="radio" className="filter-label">
+                <img src={this.props.radio.src}/>
+              </label>
             </div>
           </div>
           <div className='flex-container-amount'>
             <div className='filter-amount'>
-              <span>{this.props.amount}</span>
+              <span>{this.props.radio.amount}</span>
             </div>
           </div>
         </div>

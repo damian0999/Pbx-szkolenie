@@ -22,7 +22,7 @@ export default class Products extends React.Component{
         {name: 'Automobil', size: '90x50mm', imgSrc: '../../public/images/Automobil.png', starsImg: '../../public/images/stars.png', isFavourite: true, rating: 3},
         {name: 'Killum', size: '90x50mm', imgSrc: '../../public/images/Killum.png', starsImg: '../../public/images/stars.png', isFavourite: true, rating: 2},
       ]
-    }
+    };
   }
 
   showProducts(product, idx){
@@ -32,11 +32,13 @@ export default class Products extends React.Component{
   }
 
   render(){
+    console.log(this.props.count);
     return(
       <div>
         <Header />
         <div className='Products'>
           {this.state.products.map((el, idx) => this.showProducts(el, idx))}
+          <button onClick={() => this.props.onDecrement()}>Click</button>
         </div>
       </div>
     );
