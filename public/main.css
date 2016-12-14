@@ -491,7 +491,9 @@ body {
     -ms-flex-item-align: auto;
     align-self: auto; }
     .Checkbox .flex-container-amount .filter-amount {
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      margin-right: 20px;
+      float: right; }
       .Checkbox .flex-container-amount .filter-amount span {
         font-size: 14px;
         color: #383838; }
@@ -553,6 +555,9 @@ body {
       margin-left: auto;
       margin-right: auto; }
 
+.Filter {
+  margin-bottom: 20px; }
+
 .CustomRating {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -600,6 +605,9 @@ body {
       .CustomRating .flex-container-amount .filter-amount span {
         font-size: 14px;
         color: #383838; }
+
+.Industry .show-more {
+  color: #57c47a; }
 
 .Products {
   display: -ms-flexbox;

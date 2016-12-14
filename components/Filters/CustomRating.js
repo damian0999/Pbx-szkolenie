@@ -7,7 +7,7 @@ export default class CustomRating extends React.Component{
 
   render(){
     return(
-      <div className='CustomRating'>
+      <div className='CustomRating Filter'>
         <p className='filter-name'>Custom Rating</p>
 
         <div className='flex-container-option'>

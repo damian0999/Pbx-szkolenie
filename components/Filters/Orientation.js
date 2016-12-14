@@ -25,7 +25,7 @@ export default class OrientationFilter extends React.Component {
 
   render () {
     return (
-      <div className='OrientationFilter'>
+      <div className='OrientationFilter Filter'>
         <p className='filter-name'>Orientation</p>
         <div className='horizontal-filter'>
           <svg onClick={() => this.setOrientationHorizontal()} width="1.588cm" height="1.058cm">

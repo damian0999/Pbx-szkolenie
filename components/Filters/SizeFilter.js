@@ -20,7 +20,7 @@ export default class OptionFilter extends React.Component{
 
   render(){
     return(
-      <div className='Filter'>
+      <div className='SizeFilter Filter'>
         <p className='filter-name'>Size</p>
         {this.state.sizes.map((el, idx) => this.showCheckbox(el, idx))}
       </div>
