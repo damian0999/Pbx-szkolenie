@@ -2,7 +2,7 @@ import React from 'react';
 import Checkbox from '../general/Checkbox';
 import ClearFilters from '../general/ClearFilters';
 
-export default class OptionFilter extends React.Component{
+export default class SizeFilter extends React.Component{
   constructor(props){
     super(props);
     this.state = {

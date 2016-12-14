@@ -10,7 +10,7 @@
   -ms-flex-align: start;
   width: 100%;
   p{
-    color: #383838;
+    color: $secondary-text-color;
   }
   .horizontal-filter{
     @include flex(1, 0, auto);

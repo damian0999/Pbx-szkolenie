@@ -1,5 +1,6 @@
 import React from 'react';
-import RadioButton from '../general/RadioButton'
+import RadioButton from '../general/RadioButton';
+import ClearFilters from '../general/ClearFilters';
 
 export default class CustomRating extends React.Component{
   constructor(props){
@@ -23,6 +24,7 @@ export default class CustomRating extends React.Component{
   render(){
     return(
       <div className='CustomRating Filter'>
+        <ClearFilters />
         <p className='filter-name'>Custom Rating</p>
         {this.state.stars.map((el, idx) => this.setStarsImage(el, idx))}
       </div>

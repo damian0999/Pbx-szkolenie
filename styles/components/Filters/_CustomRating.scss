@@ -1,26 +1,14 @@
 .CustomRating{
-  @include display-flex();
-  @include flex-direction(row);
-  @include flex-wrap(wrap);
-  @include justify-content(center);
-  -ms-flex-pack: center;
-  @include align-content(flex-start);
-  -ms-flex-line-pack: start;
-  @include align-items(flex-start);
-  -ms-flex-align: start;
   .flex-container-option{
     @include flex(8, 0, auto);
     @include align-self(auto);
     .filter-option{
       display: block;
       margin-bottom: 5px;
-      img{
-        padding-left: 5px;
-      }
       .filter-label {
         padding-left: 7px;
         font-size: 14px;
-        color: #383838;
+        color: $secondary-text-color;
       }
     }
   }
@@ -31,7 +19,7 @@
       margin-bottom: 5px;
       span{
         font-size: 14px;
-        color: #383838;
+        color: $secondary-text-color;
       }
     }
   }

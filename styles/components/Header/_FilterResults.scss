@@ -5,11 +5,11 @@
     p{
       display: inline-block;
       padding-right: 10px;
-      color: #383838;
+      color: $primary-text-color;
       font-size: 14px;
     }
     span{
-      color: #9b9b9b;
+      color: $dark-text-color;
       font-size: 14px;
     }
   }
@@ -17,12 +17,12 @@
     p{
       display: inline-block;
       margin-top: 0px;
-      color: #383838;
+      color: $primary-text-color;
       font-size: 14px;
     }
     span{
-      border: 1px solid #ebebeb;
-      color: #9b9b9b;
+      border: 1px solid $border-color;
+      color: $dark-text-color;
       padding: 5px 8px 5px 8px;
       margin-left: 5px;
       i{

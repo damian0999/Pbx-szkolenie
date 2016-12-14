@@ -2,11 +2,11 @@
   margin-left: 25px;
   @include display-flex();
   @include flex-direction(row);
-  @include flex-wrap(nowrap);
-  @include justify-content(flex-start);
-  -ms-flex-pack: start;
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+  -ms-flex-pack: justify;
   @include align-content(stretch);
   -ms-flex-line-pack: stretch;
-  @include align-items(flex-start);
-  -ms-flex-align: start;
+  @include align-items(center);
+  -ms-flex-align: center;
 }

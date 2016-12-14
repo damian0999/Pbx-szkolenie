@@ -38,7 +38,6 @@ export default class Products extends React.Component{
         <Header />
         <div className='Products'>
           {this.state.products.map((el, idx) => this.showProducts(el, idx))}
-          <button onClick={() => this.props.onDecrement()}>Click</button>
         </div>
       </div>
     );

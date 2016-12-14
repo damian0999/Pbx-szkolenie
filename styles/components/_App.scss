@@ -3,21 +3,20 @@
   @include display-flex();
   @include flex-direction(row);
   @include flex-wrap(nowrap);
-  @include justify-content(center);
-  -ms-flex-pack: center;
-  @include align-content(space-between);
-  -ms-flex-line-pack: justify;
+  @include justify-content(flex-start);
+  -ms-flex-pack: start;
+  @include align-content(flex-start);
+  -ms-flex-line-pack: start;
   @include align-items(stretch);
   -ms-flex-align: stretch;
   .flex-filters-container{
-    max-width: 300px;
-    padding-left: 10px;
-    border-right: 1px solid #ebebeb;
+    max-width: 280px;
+    border-right: 1px solid $border-color;
     @include flex(1, 0, auto);
     @include align-self(auto);
   }
   .flex-products-container{
     @include flex(9, 0, auto);
-    @include align-self(auto);
+    @include align-self(stretch);
   }
 }

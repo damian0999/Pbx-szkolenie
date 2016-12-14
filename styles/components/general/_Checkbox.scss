@@ -18,21 +18,19 @@
       .filter-label {
         padding-left: 7px;
         font-size: 14px;
-        color: #383838;
+        color: $secondary-text-color;
       }
     }
   }
   .flex-container-amount{
     @include flex(2, 0, auto);
     @include align-self(auto);
-
     .filter-amount{
-      margin-bottom: 5px;
       margin-right: 20px;
       float: right;
       span{
         font-size: 14px;
-        color: #383838;
+        color: $secondary-text-color;
       }
     }
   }
