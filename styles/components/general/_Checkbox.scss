@@ -1,0 +1,36 @@
+.Checkbox{
+  @include display-flex();
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+  -ms-flex-pack: center;
+  @include align-content(flex-start);
+  -ms-flex-line-pack: start;
+  @include align-items(flex-start);
+  -ms-flex-align: start;
+  width: 100%;
+  .flex-container-option{
+    @include flex(8, 0, auto);
+    @include align-self(auto);
+    .filter-option{
+      display: block;
+      margin-bottom: 5px;
+      .filter-label {
+        padding-left: 7px;
+        font-size: 14px;
+        color: #383838;
+      }
+    }
+  }
+  .flex-container-amount{
+    @include flex(2, 0, auto);
+    @include align-self(auto);
+    .filter-amount{
+      margin-bottom: 5px;
+      span{
+        font-size: 14px;
+        color: #383838;
+      }
+    }
+  }
+}

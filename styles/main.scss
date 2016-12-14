@@ -7,8 +7,12 @@
 @import "./core/_layout";
 
 @import './components/_App';
+
+@import './components/general/_Checkbox';
+
 @import './components/Filters/_Filters';
-@import './components/Filters/_OptionFilter';
+@import './components/Filters/OrientationFilter';
+@import './components/Filters/_Filter';
 @import './components/Filters/_CustomRating';
 
 @import './components/Products/_Products';

@@ -1,6 +1,7 @@
 import React from 'react';
 
-import OptionFilter from './OptionFilter';
+import Orientation from './Orientation';
+import SizeFilter from './SizeFilter';
 import CustomRating from './CustomRating';
 
 export default class Filters extends React.Component{
@@ -12,7 +13,8 @@ export default class Filters extends React.Component{
     return(
       <div className='Filters'>
         <span>Narrow results: </span>
-        <OptionFilter />
+        <Orientation />
+        <SizeFilter />
         <CustomRating />
       </div>
     );

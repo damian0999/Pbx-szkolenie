@@ -449,17 +449,7 @@ body {
     -ms-flex-item-align: auto;
     align-self: auto; }
 
-.Filters span {
-  font-size: 18px;
-  color: #010101; }
-.Filters .filter-name {
-  font-size: 18px;
-  color: #9b9b9b;
-  width: 100%;
-  display: block;
-  margin-bottom: 9px; }
-
-.OptionFilter {
+.Checkbox {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -478,33 +468,90 @@ body {
   -webkit-align-items: flex-start;
   align-items: flex-start;
   -ms-flex-align: start;
-  margin-bottom: 10px; }
-  .OptionFilter .flex-container-option {
+  width: 100%; }
+  .Checkbox .flex-container-option {
     -webkit-flex: 8 0 auto;
     -ms-flex: 8 0 auto;
     flex: 8 0 auto;
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto; }
-    .OptionFilter .flex-container-option .filter-option {
+    .Checkbox .flex-container-option .filter-option {
       display: block;
       margin-bottom: 5px; }
-      .OptionFilter .flex-container-option .filter-option .filter-label {
+      .Checkbox .flex-container-option .filter-option .filter-label {
         padding-left: 7px;
         font-size: 14px;
         color: #383838; }
-  .OptionFilter .flex-container-amount {
+  .Checkbox .flex-container-amount {
     -webkit-flex: 2 0 auto;
     -ms-flex: 2 0 auto;
     flex: 2 0 auto;
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto; }
-    .OptionFilter .flex-container-amount .filter-amount {
+    .Checkbox .flex-container-amount .filter-amount {
       margin-bottom: 5px; }
-      .OptionFilter .flex-container-amount .filter-amount span {
+      .Checkbox .flex-container-amount .filter-amount span {
         font-size: 14px;
         color: #383838; }
+
+.Filters span {
+  font-size: 18px;
+  color: #010101; }
+.Filters .filter-name {
+  font-size: 18px;
+  color: #9b9b9b;
+  width: 100%;
+  display: block;
+  margin-bottom: 9px; }
+
+.OrientationFilter {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  align-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -ms-flex-align: start;
+  width: 100%; }
+  .OrientationFilter p {
+    color: #383838; }
+  .OrientationFilter .horizontal-filter {
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    text-align: center; }
+    .OrientationFilter .horizontal-filter svg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+  .OrientationFilter .vertical-filter {
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    text-align: center; }
+    .OrientationFilter .vertical-filter svg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
 
 .CustomRating {
   display: -ms-flexbox;
