@@ -15,18 +15,12 @@ export default class CustomRating extends React.Component{
     }
   }
 
-  setStarsImage(el,idx){
-    return(
-      <RadioButton key={idx} radio={el}/>
-    );
-  }
-
   render(){
     return(
       <div className='CustomRating Filter'>
         <ClearFilters />
         <p className='filter-name'>Custom Rating</p>
-        {this.state.stars.map((el, idx) => this.setStarsImage(el, idx))}
+        {this.state.stars.map((filter, idx) => <RadioButton key={idx} radio={filter}/>)}
       </div>
     );
   }
