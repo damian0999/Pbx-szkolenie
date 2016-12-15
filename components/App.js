@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Filters from './Filters/Filters';
-import Products from './Products/Products';
+import Filters from '../containers/Filters';
+import Products from '../containers/Products';
 
 export default class App extends React.Component{
   constructor(props){

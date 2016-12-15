@@ -1,20 +1,20 @@
 import { connect } from 'react-redux';
-import { decrement } from '../redux/action/index';
+import { fetchProducts } from '../redux/action/index';
 import Products from '../components/Products/Products';
 
 const mapStateToProps = (state, ownProps) =>({
-  count: state.count
+  products: state.products
 })
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return{
-    onDecrement: () => dispatch(decrement())
+    onfetchProducts: () => dispatch(fetchProducts())
   }
 }
 
-const CounterContainer = connect(
+const ProductsContainer = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Products)
 
-export default CounterContainer
+export default ProductsContainer

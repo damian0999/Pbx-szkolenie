@@ -5,19 +5,14 @@ import ClearFilters from '../general/ClearFilters';
 export default class Favorite extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      label: "Only favorites",
-      amount: '22',
-      isChecked: false
-    }
   }
 
   showFavourite() {
     return (
       <Checkbox
-        label={this.state.label}
-        amount={this.state.amount}
-        checked={this.state.isChecked}
+        label={this.props.filters.label}
+        amount={this.props.filters.amount}
+        checked={this.props.filters.isChecked}
         />
     )
   }

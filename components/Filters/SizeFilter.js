@@ -5,12 +5,6 @@ import ClearFilters from '../general/ClearFilters';
 export default class SizeFilter extends React.Component{
   constructor(props){
     super(props);
-    this.state = {
-      sizes: [
-        {label: "90x50mm", amount: "122", isChecked: false},
-        {label: "85x55mm", amount: "67", isChecked: false}
-      ]
-    }
   }
 
   showCheckbox(el, idx){
@@ -24,7 +18,7 @@ export default class SizeFilter extends React.Component{
       <div className='SizeFilter Filter'>
         <ClearFilters />
         <p className='filter-name'>Size</p>
-        {this.state.sizes.map((el, idx) => this.showCheckbox(el, idx))}
+        {this.props.filters.map((el, idx) => this.showCheckbox(el, idx))}
       </div>
     );
   }

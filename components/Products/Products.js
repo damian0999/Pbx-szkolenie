@@ -5,24 +5,10 @@ import Header from '../Header/Header'
 export default class Products extends React.Component{
   constructor(props){
     super(props);
-    this.state = {
-      products: [
-        {name: 'Automobil', size: '90x50mm', imgSrc: '../../public/images/Automobil.png', starsImg: '../../public/images/stars.png', isFavourite: true, rating: 3},
-        {name: 'Fifth', size: '90x50mm', imgSrc: '../../public/images/Fifth.png', starsImg: '../../public/images/stars.png', isFavourite: false, rating: 3},
-        {name: 'Severamagenition', size: '90x50mm', imgSrc: '../../public/images/Severamagenition.png', starsImg: '../../public/images/stars.png', isFavourite: false, rating: 4},
-        {name: 'Killum', size: '90x50mm', imgSrc: '../../public/images/Killum.png', starsImg: '../../public/images/stars.png', isFavourite: true, rating: 2},
+  }
 
-        {name: 'Severamagenition', size: '90x50mm', imgSrc: '../../public/images/Severamagenition.png', starsImg: '../../public/images/stars.png', isFavourite: false, rating: 4},
-        {name: 'Killum', size: '90x50mm', imgSrc: '../../public/images/Killum.png', starsImg: '../../public/images/stars.png', isFavourite: true, rating: 2},
-        {name: 'Fifth', size: '90x50mm', imgSrc: '../../public/images/Fifth.png', starsImg: '../../public/images/stars.png', isFavourite: false, rating: 3},
-        {name: 'Automobil', size: '90x50mm', imgSrc: '../../public/images/Automobil.png', starsImg: '../../public/images/stars.png', isFavourite: true, rating: 3},
-
-        {name: 'Fifth', size: '90x50mm', imgSrc: '../../public/images/Fifth.png', starsImg: '../../public/images/stars.png', isFavourite: false, rating: 3},
-        {name: 'Severamagenition', size: '90x50mm', imgSrc: '../../public/images/Severamagenition.png', starsImg: '../../public/images/stars.png', isFavourite: false, rating: 4},
-        {name: 'Automobil', size: '90x50mm', imgSrc: '../../public/images/Automobil.png', starsImg: '../../public/images/stars.png', isFavourite: true, rating: 3},
-        {name: 'Killum', size: '90x50mm', imgSrc: '../../public/images/Killum.png', starsImg: '../../public/images/stars.png', isFavourite: true, rating: 2},
-      ]
-    };
+  componentWillMount(){
+    this.props.onfetchProducts();
   }
 
   showProducts(product, idx){
@@ -32,12 +18,11 @@ export default class Products extends React.Component{
   }
 
   render(){
-    console.log(this.props.count);
     return(
       <div>
         <Header />
         <div className='Products'>
-          {this.state.products.map((el, idx) => this.showProducts(el, idx))}
+          {this.props.products.products.map((product, idx) => this.showProducts(product, idx))}
         </div>
       </div>
     );
