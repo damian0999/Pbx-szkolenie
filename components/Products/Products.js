@@ -11,18 +11,12 @@ export default class Products extends React.Component{
     this.props.onfetchProducts();
   }
 
-  showProducts(product, idx){
-    return(
-      <Product key={idx} product={product}/>
-    );
-  }
-
   render(){
     return(
       <div>
-        <Header />
+        <Header selectedFilters={this.props.selected}/>
         <div className='Products'>
-          {this.props.products.products.map((product, idx) => this.showProducts(product, idx))}
+          {this.props.products.products.map((product, idx) => <Product key={idx} product={product}/>)}
         </div>
       </div>
     );

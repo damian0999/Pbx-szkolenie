@@ -5,6 +5,12 @@ export default class FilterResults extends React.Component{
     super(props);
   }
 
+  showSelectedFilter(selected, idx){
+    return(
+      <span key={idx}>{selected.label}<i className="fa fa-times" aria-hidden="true"></i></span>
+    );
+  }
+
   render(){
     return(
       <div className='FilterResults'>
@@ -14,12 +20,7 @@ export default class FilterResults extends React.Component{
         </div>
         <div className='selected-filters'>
           <p>Showing Filters: </p>
-          <span>Horizontal <i className="fa fa-times" aria-hidden="true"></i></span>
-          <span>90x50mm <i className="fa fa-times" aria-hidden="true"></i></span>
-          <span>Automotive <i className="fa fa-times" aria-hidden="true"></i></span>
-          <span>Sport <i className="fa fa-times" aria-hidden="true"></i></span>
-          <span>Art <i className="fa fa-times" aria-hidden="true"></i></span>
-          <span>Music <i className="fa fa-times" aria-hidden="true"></i></span>
+          {this.props.selectedFilters.map((selected, idx) => this.showSelectedFilter(selected, idx))}
         </div>
       </div>
     );

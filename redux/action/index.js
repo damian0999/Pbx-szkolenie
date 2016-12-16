@@ -5,3 +5,8 @@ export const fetchProducts = () => ({
 export const fetchFilters = () => ({
   type: 'FETCH_FILTERS'
 });
+
+export const choosenFilters = (filter) => ({
+  type: 'CHOOSEN_FILTERS',
+  filter
+})

@@ -3,7 +3,8 @@ import { fetchProducts } from '../redux/action/index';
 import Products from '../components/Products/Products';
 
 const mapStateToProps = (state, ownProps) =>({
-  products: state.products
+  products: state.products,
+  selected: Object.values(state.filters.selectedFilters)
 })
 
 const mapDispatchToProps = (dispatch, ownProps) => {

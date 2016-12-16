@@ -10,7 +10,7 @@ export default class Header extends React.Component{
   render(){
     return(
       <div className='Header'>
-        <FilterResults />
+        <FilterResults selectedFilters={this.props.selectedFilters}/>
         <ViewFilters />
       </div>
     );
