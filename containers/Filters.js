@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { fetchFilters, choosenFilters } from '../redux/action/index';
+import { fetchFilters, choosenFilters, deleteChoosenFilter } from '../redux/action/index';
 import Filters from '../components/Filters/Filters';
 
 const mapStateToProps = (state, ownProps) =>({
@@ -11,7 +11,8 @@ const mapStateToProps = (state, ownProps) =>({
 const mapDispatchToProps = (dispatch, ownProps) => {
   return{
     onFetchFilters: () => dispatch(fetchFilters()),
-    chooseFilter: (filter) => dispatch(choosenFilters(filter)),
+    chooseFilter: (filter, index) => dispatch(choosenFilters(filter, index)),
+    deleteChooseFilter: (index, label) => dispatch(deleteChoosenFilter(index, label))
   }
 }
 

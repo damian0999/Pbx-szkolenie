@@ -6,7 +6,14 @@ export const fetchFilters = () => ({
   type: 'FETCH_FILTERS'
 });
 
-export const choosenFilters = (filter) => ({
-  type: 'CHOOSEN_FILTERS',
-  filter
+export const choosenFilters = (label, index) => ({
+  type: 'CHOOSEN_FILTER',
+  label,
+  index
 })
+
+export const deleteChoosenFilter = (label, index) => ({
+  type: 'DELETE_CHOOSEN_FILTER',
+  label,
+  index
+});

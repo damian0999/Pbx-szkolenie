@@ -20,7 +20,7 @@ export default class Filters extends React.Component{
       <div className='Filters'>
         <h3>Narrow results: </h3>
         <Orientation />
-        <SizeFilter filters={this.props.size} chooseFilter={this.props.chooseFilter}/>
+        <SizeFilter filters={this.props.size} chooseFilter={this.props.chooseFilter} deleteChooseFilter={this.props.deleteChooseFilter}/>
         <CustomRating />
         <Favourite filters={this.props.favourite}/>
         <Industy filters={this.props.industry}/>

@@ -14,10 +14,12 @@ export default class SizeFilter extends React.Component{
         <p className='filter-name'>Size</p>
         {this.props.filters.map((filter, idx) =>
           <Checkbox key={idx}
+                    index={idx}
                     label={filter.label}
                     amount={filter.amount}
                     isChecked={filter.isChecked}
-                    chooseFilter={this.props.chooseFilter}/>)}
+                    chooseFilter={this.props.chooseFilter}
+                    deleteChooseFilter={this.props.deleteChooseFilter}/>)}
       </div>
     );
   }

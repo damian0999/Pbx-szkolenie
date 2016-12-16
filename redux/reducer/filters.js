@@ -1,3 +1,5 @@
+import { collectionToMap } from '../utils/utils'
+
 const sizeFilter = [
   {label: "90x50mm", amount: "122", isChecked: false},
   {label: "85x55mm", amount: "67", isChecked: false}
@@ -27,11 +29,16 @@ function filters(state = {sizeFilters: [], favouriteFilters: [], industryFilters
         industryFilters: industryFilter,
       });
 
-    case 'CHOOSEN_FILTERS':
-      var state = Object.assign({}, state);
-      var filter = { label: action.filter };
-      state.selectedFilters.push(filter);
-      return state;
+    case 'CHOOSEN_FILTER':
+      var newState = Object.assign({}, state);
+      var filter = { label: action.label, index: action.index };
+      newState.selectedFilters.push(filter);
+      return newState;
+
+    case 'DELETE_CHOOSEN_FILTER':
+      var newState = Object.assign({}, state);
+      newState.selectedFilters.splice(action.index, 1);
+      return newState;
 
     default:
       return state;
