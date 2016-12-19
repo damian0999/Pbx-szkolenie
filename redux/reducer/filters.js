@@ -3,9 +3,9 @@ const sizeFilter = [
   {label: "85x55mm", amount: "67", isChecked: false}
 ];
 
-const favouriteFilter = {
-  label: "Only favorites", amount: '22', isChecked: false
-};
+const favouriteFilter = [
+  {label: "Only favorites", amount: '22', isChecked: false}
+];
 
 const industryFilter = [
   {label: "All", amount: "840", isChecked: false},

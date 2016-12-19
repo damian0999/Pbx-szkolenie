@@ -4,8 +4,8 @@ import Filters from '../components/Filters/Filters';
 
 const mapStateToProps = (state, ownProps) =>({
   size: state.filters.sizeFilters,
-  favourite: state.filters.favouriteFilters,
-  industry: state.filters.industryFilters,
+  favourite: Object.values(state.filters.favouriteFilters),
+  industry: Object.values(state.filters.industryFilters),
 })
 
 const mapDispatchToProps = (dispatch, ownProps) => {

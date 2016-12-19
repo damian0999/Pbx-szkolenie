@@ -1,10 +1,9 @@
 import React from 'react';
 
 import Orientation from './Orientation';
-import SizeFilter from './SizeFilter';
 import CustomRating from './CustomRating';
-import Favourite from './Favourite';
-import Industy from './Industry'
+
+import Filter from './Filter'
 
 export default class Filters extends React.Component{
   constructor(props){
@@ -20,10 +19,10 @@ export default class Filters extends React.Component{
       <div className='Filters'>
         <h3>Narrow results: </h3>
         <Orientation />
-        <SizeFilter filters={this.props.size} chooseFilter={this.props.chooseFilter} deleteChooseFilter={this.props.deleteChooseFilter}/>
+        <Filter name='Size' filters={this.props.size} chooseFilter={this.props.chooseFilter} deleteChooseFilter={this.props.deleteChooseFilter}/>
         <CustomRating />
-        <Favourite filters={this.props.favourite}/>
-        <Industy filters={this.props.industry}/>
+        <Filter name='Favourite' filters={this.props.favourite} chooseFilter={this.props.chooseFilter} deleteChooseFilter={this.props.deleteChooseFilter}/>
+        <Filter name='Industry' filters={this.props.industry} chooseFilter={this.props.chooseFilter} deleteChooseFilter={this.props.deleteChooseFilter}/>
       </div>
     );
   }
