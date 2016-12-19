@@ -515,58 +515,21 @@ body {
   .Filters .clear-filter:hover {
     cursor: pointer; }
 
-.OrientationFilter {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  align-content: flex-start;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  -ms-flex-align: start;
-  width: 100%; }
-  .OrientationFilter p {
+.OrientationFilter div {
+  clear: both;
+  display: inline-block;
+  padding: 0 20px 5px 20px;
+  margin: 0 auto; }
+  .OrientationFilter div #horizontal {
+    margin-bottom: 5px; }
+  .OrientationFilter div svg {
+    display: block;
+    margin: 0 auto; }
+  .OrientationFilter div label {
+    display: block;
+    text-align: center;
+    padding: 4px;
     color: #383838; }
-  .OrientationFilter .horizontal-filter {
-    -webkit-flex: 1 0 auto;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    text-align: center; }
-    .OrientationFilter .horizontal-filter p {
-      margin-top: 18px;
-      padding-right: 10px; }
-    .OrientationFilter .horizontal-filter svg {
-      display: block;
-      margin-left: auto;
-      margin-right: auto; }
-  .OrientationFilter .vertical-filter {
-    -webkit-flex: 1 0 auto;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    text-align: center; }
-    .OrientationFilter .vertical-filter p {
-      margin-top: 0px;
-      padding-right: 10px; }
-    .OrientationFilter .vertical-filter svg {
-      display: block;
-      margin-left: auto;
-      margin-right: auto; }
 
 .Filter {
   margin-bottom: 20px; }
