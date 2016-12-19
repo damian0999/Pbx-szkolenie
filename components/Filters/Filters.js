@@ -18,7 +18,7 @@ export default class Filters extends React.Component{
     return(
       <div className='Filters'>
         <h3>Narrow results: </h3>
-        <Orientation />
+        <Orientation chooseFilter={this.props.chooseFilter} deleteChooseFilter={this.props.deleteChooseFilter} />
         <Filter name='Size' filters={this.props.size} chooseFilter={this.props.chooseFilter} deleteChooseFilter={this.props.deleteChooseFilter}/>
         <CustomRating />
         <Filter name='Favourite' filters={this.props.favourite} chooseFilter={this.props.chooseFilter} deleteChooseFilter={this.props.deleteChooseFilter}/>

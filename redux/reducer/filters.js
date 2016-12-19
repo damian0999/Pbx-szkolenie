@@ -29,13 +29,13 @@ function filters(state = {sizeFilters: [], favouriteFilters: [], industryFilters
 
     case 'CHOOSEN_FILTER':
       var newState = Object.assign({}, state);
-      var filter = { label: action.label, index: action.index };
-      newState.selectedFilters.push(filter);
+      newState.selectedFilters.push(action.label);
       return newState;
 
     case 'DELETE_CHOOSEN_FILTER':
-      var newState = Object.assign({}, state);
-      newState.selectedFilters.splice(action.index, 1);
+      var newState = Object.assign([], state);
+      var index = newState.selectedFilters.indexOf(action.label);
+      newState.selectedFilters.splice(index, 1);
       return newState;
 
     default:

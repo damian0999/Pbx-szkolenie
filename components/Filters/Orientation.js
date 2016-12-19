@@ -12,15 +12,31 @@ export default class Orientation extends React.Component {
   }
 
   setOrientationHorizontal() {
-    this.setState({
-      horizontalCheck: !this.state.horizontalCheck
-    });
+    if(!this.state.horizontalCheck){
+      this.props.chooseFilter('horizontal')
+      this.setState({
+        horizontalCheck: true
+      });
+    } else {
+      this.props.deleteChooseFilter('horizontal')
+      this.setState({
+        horizontalCheck: false
+      });
+    }
   }
 
   setOrientationVertical() {
-    this.setState({
-      verticalCheck: !this.state.verticalCheck
-    });
+    if(!this.state.verticalCheck) {
+      this.props.chooseFilter('vertical')
+      this.setState({
+        verticalCheck: true
+      });
+    } else {
+      this.props.deleteChooseFilter('vertical');
+      this.setState({
+        verticalCheck: false
+      });
+    }
   }
 
   render(){

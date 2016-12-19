@@ -8,14 +8,14 @@ export default class Checkbox extends React.Component {
     };
   }
 
-  setCheckbox(label, index){
+  setCheckbox(label){
     if(!this.state.checked){
-      this.props.chooseFilter(label, index);
+      this.props.chooseFilter(label);
       this.setState({
         checked: true
       });
     } else {
-      this.props.deleteChooseFilter(label, index);
+      this.props.deleteChooseFilter(label);
       this.setState({
         checked: false
       });
@@ -35,7 +35,7 @@ export default class Checkbox extends React.Component {
       <div className='Checkbox'>
         <div className='flex-container-option'>
           <div className='filter-option'>
-              <img src={this.selectCheckbox()} name='checkbox' className='checkbox' onClick={() => this.setCheckbox(this.props.label, this.props.index)}/>
+              <img src={this.selectCheckbox()} name='checkbox' className='checkbox' onClick={() => this.setCheckbox(this.props.label)}/>
               <label htmlFor="checkbox" className="filter-label">{this.props.label}</label>
             </div>
           </div>

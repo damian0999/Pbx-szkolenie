@@ -1,16 +1,6 @@
 import React from 'react';
 
 export default class FilterResults extends React.Component{
-  constructor(props){
-    super(props);
-  }
-
-  showSelectedFilter(selected, idx){
-    return(
-      <span key={idx}>{selected.label}<i className="fa fa-times" aria-hidden="true"></i></span>
-    );
-  }
-
   render(){
     return(
       <div className='FilterResults'>
@@ -20,7 +10,8 @@ export default class FilterResults extends React.Component{
         </div>
         <div className='selected-filters'>
           <p>Showing Filters: </p>
-          {this.props.selectedFilters.map((selected, idx) => this.showSelectedFilter(selected, idx))}
+          {this.props.selectedFilters.map((selected, idx) =>
+          <span key={idx}>{selected}<i className="fa fa-times" aria-hidden="true"></i></span>)}
         </div>
       </div>
     );
