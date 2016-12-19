@@ -1,5 +1,3 @@
-import { collectionToMap } from '../utils/utils'
-
 const sizeFilter = [
   {label: "90x50mm", amount: "122", isChecked: false},
   {label: "85x55mm", amount: "67", isChecked: false}

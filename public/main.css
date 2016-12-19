@@ -446,7 +446,8 @@ body {
     flex: 9 0 auto;
     -webkit-align-self: stretch;
     -ms-flex-item-align: stretch;
-    align-self: stretch; }
+    align-self: stretch;
+    width: 1000px; }
 
 .Checkbox {
   display: -ms-flexbox;
@@ -597,9 +598,12 @@ body {
       font-size: 14px;
       color: #383838; }
 
-.ViewFilters .dropdown .dropdown-content {
-  width: 98% !important;
-  border-top: 0px !important; }
+.ViewFilters {
+  text-align: right;
+  margin-right: 25px; }
+  .ViewFilters .dropdown .dropdown-content {
+    width: 98% !important;
+    border-top: 0px !important; }
 
 .Products {
   display: -ms-flexbox;
@@ -620,11 +624,12 @@ body {
   -webkit-align-items: flex-start;
   align-items: flex-start;
   -ms-flex-align: start;
-  width: 82%; }
+  width: 100%; }
 
 .Product {
   padding: 20px;
   margin: 10px;
+  width: 220px;
   border: 2px solid white; }
   .Product .product-image {
     margin-left: auto;
