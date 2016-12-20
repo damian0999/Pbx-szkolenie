@@ -24,9 +24,9 @@ export default class Checkbox extends React.Component {
 
   selectCheckbox() {
     if(this.state.checked){
-      return '../../public/images/checkbox-checked.png'
+      return '../../public/images/checkbox-checked.svg'
     } else {
-      return '../../public/images/checkbox-unchecked.png'
+      return '../../public/images/checkbox-unchecked.svg'
     }
   }
 

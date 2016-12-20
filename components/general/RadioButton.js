@@ -16,9 +16,9 @@ export default class Checkbox extends React.Component {
 
   selectRadio(){
     if(this.state.checked){
-      return '../../public/images/radio-checked.png'
+      return '../../public/images/radio-checked.svg'
     } else {
-      return '../../public/images/radio-unchecked.png'
+      return '../../public/images/radio-unchecked.svg'
     }
   }
 

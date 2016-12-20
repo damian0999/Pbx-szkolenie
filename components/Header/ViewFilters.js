@@ -30,9 +30,9 @@ export default class ViewFilters extends React.Component{
 
         </div>
         <div className='columns-filter'>
-          <img src='../../public/images/4columns.png'/>
-          <img src='../../public/images/3columns.png'/>
-          <img src='../../public/images/2columns.png'/>
+          <img src='../../public/images/4columns.svg'/>
+          <img src='../../public/images/3columns.svg'/>
+          <img src='../../public/images/2columns.svg'/>
         </div>
       </div>
     );
