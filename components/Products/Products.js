@@ -1,6 +1,6 @@
 import React from 'react';
 import Product from './Product';
-import Header from '../Header/Header'
+import Header from '../Header/Header';
 
 export default class Products extends React.Component{
   constructor(props){

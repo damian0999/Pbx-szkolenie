@@ -520,8 +520,6 @@ body {
   display: inline-block;
   padding: 0 20px 5px 20px;
   margin: 0 auto; }
-  .OrientationFilter div #horizontal {
-    margin-bottom: 5px; }
   .OrientationFilter div svg {
     display: block;
     margin: 0 auto; }
@@ -607,8 +605,11 @@ body {
     -o-transition: All 0.3s linear; }
   .Product .product-rating {
     margin-top: 20px; }
-    .Product .product-rating .favourite-image {
-      float: right; }
+    .Product .product-rating .Favourite {
+      float: right;
+      color: #dadada; }
+      .Product .product-rating .Favourite .favourite-color {
+        color: #e53935; }
   .Product .product-description .product-name {
     margin-top: 5px;
     margin-bottom: 5px;

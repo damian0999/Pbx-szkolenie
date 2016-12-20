@@ -11,8 +11,12 @@
   }
   .product-rating{
     margin-top: 20px;
-    .favourite-image{
+    .Favourite{
       float: right;
+      color: $default-heart-color;
+      .favourite-color{
+        color: $favourite-color;
+      }
     }
   }
   .product-description{

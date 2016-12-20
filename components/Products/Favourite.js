@@ -8,28 +8,18 @@ export default class Favourite extends React.Component {
     }
   }
 
-  selectFavourite(){
+  setFavourite(){
     this.setState({
       favourite: !this.state.favourite
     });
   }
 
-  setFavourite() {
-    if(this.state.favourite) {
-      return "../../public/images/HeartRed.png"
-
-    } else {
-      return "../../public/images/HeartGray.png"
-    }
-  }
-
   render(){
     return(
-      <span>
-        <img src={this.setFavourite()}
-          alt="favourite"
-          className='favourite-image'
-          onClick={() => this.selectFavourite()}/>
+      <span className='Favourite'>
+        <i className={`fa fa-heart ${this.state.favourite ? 'favourite-color' : ''}`}
+          onClick={() => this.setFavourite()}
+          aria-hidden="true"></i>
       </span>
     );
   }
