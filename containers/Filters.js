@@ -3,7 +3,7 @@ import { fetchFilters, choosenFilters, deleteChoosenFilter } from '../redux/acti
 import Filters from '../components/Filters/Filters';
 
 const mapStateToProps = (state, ownProps) =>({
-  size: state.filters.sizeFilters,
+  size: Object.values(state.filters.sizeFilters),
   favourite: Object.values(state.filters.favouriteFilters),
   industry: Object.values(state.filters.industryFilters),
 })

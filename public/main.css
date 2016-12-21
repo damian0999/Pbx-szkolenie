@@ -605,6 +605,11 @@ body {
     -o-transition: All 0.3s linear; }
   .Product .product-rating {
     margin-top: 20px; }
+    .Product .product-rating .Rating i {
+      padding-right: 4px;
+      color: #dadada; }
+    .Product .product-rating .Rating .color-star {
+      color: #fdd201; }
     .Product .product-rating .Favourite {
       float: right;
       color: #dadada; }

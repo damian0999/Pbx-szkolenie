@@ -1,4 +1,5 @@
 import React from 'react';
+import Rating from './Rating';
 import Favourite from './Favourite';
 
 export default class Product extends React.Component{
@@ -11,7 +12,7 @@ export default class Product extends React.Component{
       <div className='Product'>
         <img src={this.props.product.imgSrc} className='product-image'/>
         <div className='product-rating'>
-          <img src={this.props.product.starsImg}/>
+          <Rating rating={this.props.product.rating}/>
           <Favourite isFavourite={this.props.product.isFavourite}/>
         </div>
         <div className='product-description'>

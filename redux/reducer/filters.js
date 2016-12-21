@@ -24,7 +24,7 @@ function filters(state = {sizeFilters: [], favouriteFilters: [], industryFilters
       return Object.assign({}, state, {
         sizeFilters: sizeFilter,
         favouriteFilters: favouriteFilter,
-        industryFilters: industryFilter,
+        industryFilters: industryFilter
       });
 
     case 'CHOOSEN_FILTER':
