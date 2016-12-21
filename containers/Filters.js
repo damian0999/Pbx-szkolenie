@@ -6,6 +6,7 @@ const mapStateToProps = (state, ownProps) =>({
   size: Object.values(state.filters.sizeFilters),
   favourite: Object.values(state.filters.favouriteFilters),
   industry: Object.values(state.filters.industryFilters),
+  custom: Object.values(state.filters.customFilters)
 })
 
 const mapDispatchToProps = (dispatch, ownProps) => {

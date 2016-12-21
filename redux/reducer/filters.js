@@ -17,14 +17,22 @@ const industryFilter = [
   {label: "Art", amount: "20", isChecked: false}
 ];
 
-function filters(state = {sizeFilters: [], favouriteFilters: [], industryFilters: [], selectedFilters: []}, action){
+const customFilter = [
+  {rate: '4', amount: '62'},
+  {rate: '3', amount: '9'},
+  {rate: '2', amount: '18'},
+  {rate: '1', amount: '22'}
+]
+
+function filters(state = {sizeFilters: [], favouriteFilters: [], industryFilters: [],customFilters: [], selectedFilters: []}, action){
   switch(action.type){
 
     case 'FETCH_FILTERS':
       return Object.assign({}, state, {
         sizeFilters: sizeFilter,
         favouriteFilters: favouriteFilter,
-        industryFilters: industryFilter
+        industryFilters: industryFilter,
+        customFilters: customFilter
       });
 
     case 'CHOOSEN_FILTER':

@@ -1,4 +1,5 @@
 import React from "react";
+import Rating from '../general/Rating'
 
 export default class Checkbox extends React.Component {
   constructor(props) {
@@ -29,13 +30,13 @@ export default class Checkbox extends React.Component {
           <div className='filter-option'>
               <img src={this.selectRadio()} name='radio' className='checkbox' onClick={() => this.setRadio()}/>
               <label htmlFor="radio" className="filter-label">
-                <img src={this.props.radio.src}/>
+                <Rating rating={this.props.rating.rate}/>
               </label>
             </div>
           </div>
           <div className='flex-container-amount'>
             <div className='filter-amount'>
-              <span>{this.props.radio.amount}</span>
+              <span>{this.props.rating.amount}</span>
             </div>
           </div>
         </div>

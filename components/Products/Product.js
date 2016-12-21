@@ -1,5 +1,5 @@
 import React from 'react';
-import Rating from './Rating';
+import Rating from '../general/Rating';
 import Favourite from './Favourite';
 
 export default class Product extends React.Component{
