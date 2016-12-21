@@ -2,7 +2,7 @@ import React from "react";
 import Checkbox from "../general/Checkbox";
 import ClearFilters from '../general/ClearFilters';
 
-export default class Filter extends React.Component {
+export default class CheckboxFilterGroup extends React.Component {
   render(){
     return(
       <div className='Filter'>
