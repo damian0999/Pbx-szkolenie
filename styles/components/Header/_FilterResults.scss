@@ -5,6 +5,7 @@
     p{
       display: inline-block;
       padding-right: 10px;
+      margin-bottom: 4px;
       color: $primary-text-color;
       font-size: 14px;
     }
@@ -16,7 +17,6 @@
   .selected-filters{
     p{
       display: inline-block;
-      margin-top: 0px;
       color: $primary-text-color;
       font-size: 14px;
     }

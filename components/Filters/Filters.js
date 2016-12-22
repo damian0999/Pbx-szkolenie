@@ -5,9 +5,6 @@ import CustomRating from './CustomRating';
 import CheckboxFilterGroup from './CheckboxFilterGroup'
 
 export default class Filters extends React.Component{
-  constructor(props){
-    super(props);
-  }
 
   componentWillMount(){
     this.props.onFetchFilters();

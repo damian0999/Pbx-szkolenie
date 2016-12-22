@@ -6,7 +6,7 @@ export default class FilterResults extends React.Component{
       <div className='FilterResults'>
         <div className='search-results'>
           <p>Search Results: </p>
-          <span>72</span>
+          <span>{this.props.amountOfProducts}</span>
         </div>
         <div className='selected-filters'>
           <p>Showing Filters: </p>

@@ -6,13 +6,24 @@ export default class ViewFilters extends React.Component{
     super(props);
     this.state = {
       show: false,
-      selectedOption: '20'
+      selectedOption: '20',
+      previousSelectedOption: '',
+      options: ['40', '80', 'All']
     }
   }
 
-  dropDownButton() {
+  dropDownButton(){
     this.setState({
         show: !this.state.show
+    });
+  }
+
+  selectOption(option, index){
+    this.state.previousSelectedOption = this.state.selectedOption;
+    this.state.options[index] = this.state.previousSelectedOption;
+    this.state.options.sort();
+    this.setState({
+      selectedOption: option
     });
   }
 
@@ -23,9 +34,7 @@ export default class ViewFilters extends React.Component{
           <button className="dropbtn"> Show: <span>{this.state.selectedOption}</span></button>
 
           <div id="myDropdown" className={`dropdown-content ${this.state.show ? 'show' : ''}`}>
-            <a href="#">40</a>
-            <a href="#">80</a>
-            <a href="#">All</a>
+            {this.state.options.map((option, index) => <p key={index} onClick={() => this.selectOption(option, index)}>{option}</p>)}
           </div>
 
         </div>

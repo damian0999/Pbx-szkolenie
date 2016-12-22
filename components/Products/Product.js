@@ -3,10 +3,6 @@ import Rating from '../general/Rating';
 import Favourite from './Favourite';
 
 export default class Product extends React.Component{
-  constructor(props){
-    super(props);
-  }
-
   render(){
     return(
       <div className='Product'>
