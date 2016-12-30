@@ -1,6 +1,6 @@
 const allProducts = [
-  {name: 'Automobil', size: '85x55mm', imgSrc: '../../public/images/Automobil.png', isFavourite: true, rating: 5, industry: 'Automotive', orientation: 'horizontal'},
-  {name: 'Fifth', size: '85x55mm', imgSrc: '../../public/images/Fifth.png', isFavourite: false, rating: 3, industry: 'Fashion', orientation: 'horizontal'},
+  {name: 'Automobil', size: '85x55mm', imgSrc: '../../public/images/Automobil.png', isFavourite: false, rating: 5, industry: 'Automotive', orientation: 'horizontal'},
+  {name: 'Fifth', size: '85x55mm', imgSrc: '../../public/images/Fifth.png', isFavourite: true, rating: 3, industry: 'Fashion', orientation: 'horizontal'},
   {name: 'Severamagenition', size: '85x55mm', imgSrc: '../../public/images/Severamagenition.png', isFavourite: false, rating: 4, industry: 'Law', orientation: 'horizontal'},
   {name: 'Killum', size: '85x55mm', imgSrc: '../../public/images/Killum.png', isFavourite: true, rating: 2, industry: 'IT', orientation: 'horizontal'},
 
@@ -21,6 +21,10 @@ function products(state = {products: []}, action){
       return Object.assign({}, state, {
         products: allProducts
       });
+      case 'SET_FAVOURITE':
+        var newState = Object.assign({}, state);
+        action.product.isFavourite = !action.product.isFavourite;
+        return newState;
     default:
       return state;
   }

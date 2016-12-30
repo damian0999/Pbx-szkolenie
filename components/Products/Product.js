@@ -9,7 +9,7 @@ export default class Product extends React.Component{
         <img src={this.props.product.imgSrc} className='product-image'/>
         <div className='product-rating'>
           <Rating rating={this.props.product.rating}/>
-          <Favourite isFavourite={this.props.product.isFavourite}/>
+          <Favourite isFavourite={this.props.product.isFavourite} toggleFavourite={() => this.props.setFavouriteProduct(this.props.product)}/>
         </div>
         <div className='product-description'>
           <p className='product-name'>{this.props.product.name}</p>

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { fetchProducts } from '../redux/action/index';
+import { fetchProducts, setFavourite } from '../redux/action/index';
 import { applyFilters } from './ApplyFilters'
 import Products from '../components/Products/Products';
 
@@ -10,7 +10,8 @@ const mapStateToProps = (state, ownProps) =>({
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return{
-    onfetchProducts: () => dispatch(fetchProducts())
+    onfetchProducts: () => dispatch(fetchProducts()),
+    setFavouriteProduct: (product) => dispatch(setFavourite(product))
   }
 }
 
