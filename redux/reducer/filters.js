@@ -8,7 +8,6 @@ const favouriteFilter = [
 ];
 
 const industryFilter = [
-  {label: "All", amount: "840", isChecked: false},
   {label: "Automotive", amount: "112", isChecked: false},
   {label: "Fashion", amount: "83", isChecked: false},
   {label: "Law", amount: "230", isChecked: false},

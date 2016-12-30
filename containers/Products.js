@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
 import { fetchProducts } from '../redux/action/index';
+import { applyFilters } from './ApplyFilters'
 import Products from '../components/Products/Products';
 
 const mapStateToProps = (state, ownProps) =>({
-  products: state.products,
+  products: applyFilters(state.products.products, state.filters.selectedFilters),
   selected: Object.values(state.filters.selectedFilters)
 })
 
