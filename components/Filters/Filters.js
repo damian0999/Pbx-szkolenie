@@ -16,7 +16,7 @@ export default class Filters extends React.Component{
         <h3>Narrow results: </h3>
         <Orientation chooseFilter={this.props.chooseFilter} deleteChooseFilter={this.props.deleteChooseFilter} />
         <CheckboxFilterGroup name='Size' filters={this.props.size} chooseFilter={this.props.chooseFilter} deleteChooseFilter={this.props.deleteChooseFilter}/>
-        <CustomRating filters={this.props.custom}/>
+        <CustomRating filters={this.props.custom} chooseFilter={this.props.chooseFilter} deleteChooseFilter={this.props.deleteChooseFilter}/>
         <CheckboxFilterGroup name='Favourite' filters={this.props.favourite} chooseFilter={this.props.chooseFilter} deleteChooseFilter={this.props.deleteChooseFilter}/>
         <CheckboxFilterGroup name='Industry' filters={this.props.industry} chooseFilter={this.props.chooseFilter} deleteChooseFilter={this.props.deleteChooseFilter}/>
       </div>

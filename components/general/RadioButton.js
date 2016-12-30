@@ -9,10 +9,18 @@ export default class Checkbox extends React.Component {
     };
   }
 
-  setRadio(){
-    this.setState({
-      checked: !this.state.checked
-    });
+  setRadio(rate){
+    if(!this.state.checked){
+      this.props.chooseFilter("Rating " +rate);
+      this.setState({
+        checked: true
+      });
+    } else {
+      this.props.deleteChooseFilter('Rating '+rate);
+      this.setState({
+        checked: false
+      });
+    }
   }
 
   selectRadio(){
@@ -23,12 +31,12 @@ export default class Checkbox extends React.Component {
     }
   }
 
-  render () {
-    return (
+  render(){
+    return(
       <div className='Checkbox'>
         <div className='flex-container-option'>
           <div className='filter-option'>
-              <img src={this.selectRadio()} name='radio' className='checkbox' onClick={() => this.setRadio()}/>
+              <img src={this.selectRadio()} name='radio' className='checkbox' onClick={() => this.setRadio(this.props.rating.rate)}/>
               <label htmlFor="radio" className="filter-label">
                 <Rating rating={this.props.rating.rate}/>
               </label>

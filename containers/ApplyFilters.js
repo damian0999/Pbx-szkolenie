@@ -39,6 +39,18 @@ export const applyFilters = (products, filters) => {
     if(_.contains(filters, 'vertical')){
       activeFilters.push.apply(activeFilters, _.filter(products, product => product.orientation == 'vertical'))
     };
+    if(_.contains(filters, 'Rating 4')){
+      activeFilters.push.apply(activeFilters, _.filter(products, product => product.rating == 4))
+    };
+    if(_.contains(filters, 'Rating 3')){
+      activeFilters.push.apply(activeFilters, _.filter(products, product => product.rating == 3))
+    };
+    if(_.contains(filters, 'Rating 2')){
+      activeFilters.push.apply(activeFilters, _.filter(products, product => product.rating == 2))
+    };
+    if(_.contains(filters, 'Rating 1')){
+      activeFilters.push.apply(activeFilters, _.filter(products, product => product.rating == 1))
+    };
     return _.uniq(activeFilters);
   }
 }
