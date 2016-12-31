@@ -1,12 +1,16 @@
-.Products{
-  @include display-flex();
-  @include flex-direction(row);
-  @include flex-wrap(wrap);
-  @include justify-content(flex-start);
-  -ms-flex-pack: start;
-  @include align-content(flex-start);
-  -ms-flex-line-pack: start;
-  @include align-items(flex-start);
-  -ms-flex-align: start;
-  width: 100%;
+.ProductsComponent{
+  .Products{
+    @include display-flex();
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include justify-content(flex-start);
+    -ms-flex-pack: start;
+    @include align-content(flex-start);
+    -ms-flex-line-pack: start;
+    @include align-items(flex-start);
+    -ms-flex-align: start;
+    width: 100%;
+    margin-left: 1%;
+  }
+  width: 99%;
 }

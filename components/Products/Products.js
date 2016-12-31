@@ -10,7 +10,7 @@ export default class Products extends React.Component{
 
   render(){
     return(
-      <div>
+      <div className='ProductsComponent'>
         <Header selectedFilters={this.props.selected} amountOfProducts={this.props.products.length}/>
         <div className='Products'>
           {this.props.products.map((product, idx) =>
